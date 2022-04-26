@@ -43,14 +43,13 @@ function playRound(playerSelection, computerSelection)
 
 function playGame() 
 {
-    for (let i = 0; i < 5; i++) 
-    {
-    let playerChoice = "RoCk";
+    let playerChoice = prompt("Choose: Rock, Paper, Scissors");
     playerChoice = playerChoice.toUpperCase();
     let computerChoice = computerPlay();
 
-    console.log("Game " + i + 1 + ": " + playRound(playerChoice, computerChoice));
-    }
+    console.log(playRound(playerChoice, computerChoice));
+    playGame();
 }
+
 playGame();
 
