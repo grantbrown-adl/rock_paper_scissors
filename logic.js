@@ -28,9 +28,9 @@ function playRound(playerSelection, computerSelection)
     else if (playerSelection == "PAPER") 
     {
         if (computerSelection == "Rock")
-            return "You Lose! " + computerSelection + " breaks " + playerSelection;
+            return "You Win! " + computerSelection + " covers " + playerSelection;
         else
-            return "You Win! " + playerSelection + " covers " + computerSelection;
+            return "You Lose! " + playerSelection + " cuts " + computerSelection;
     }
     else if (playerSelection == "SCISSORS") 
     {
